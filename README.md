@@ -1,2 +1,2 @@
-# HW-course-material-
+# HW-course-material
 Material for the HW course
