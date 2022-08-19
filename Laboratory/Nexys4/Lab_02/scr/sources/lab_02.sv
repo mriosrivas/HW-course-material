@@ -126,5 +126,26 @@ module logical_operations(
 endmodule
 
 
+// Exercise #6
+// Implement a 4 bit full adder using the full_adder module provided.
+module full_adder(
+    input logic a,
+    input logic b,
+    input logic c_in,
+    output logic s,
+    output logic c_out);
+    
+    assign s = a ^ b ^ c_in;
+    assign c_out = a&b | c_in&(a|b);
+
+endmodule
 
 
+module full_adder_4_bit(
+    input logic [3:0] A,
+    input logic [3:0] B,
+    output logic [3:0] S,
+    output logic C_out);
+ 
+// YOUR CODE IN HERE
+endmodule
