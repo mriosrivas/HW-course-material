@@ -271,3 +271,33 @@ set_property -dict { PACKAGE_PIN U16   IOSTANDARD LVCMOS33 } [get_ports { out[7]
 set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports { sel[1] }]; #left button
 set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports { sel[0] }]; #right button
 ```
+
+## Exercise #6
+
+Create a 4 bit full adder using as basic block the `full_adder` module provided.
+
+```verilog
+module full_adder(
+    input logic a,
+    input logic b,
+    input logic c_in,
+    output logic s,
+    output logic c_out);
+    
+    assign s = a ^ b ^ c_in;
+    assign c_out = a&b | c_in&(a|b);
+
+endmodule
+
+
+module full_adder_4_bit(
+    input logic [3:0] A,
+    input logic [3:0] B,
+    output logic [3:0] S,
+    output logic C_out);
+ 
+// YOUR CODE IN HERE
+endmodule
+```
+
+You can use as reference this link [Full Adder : Circuit Diagram, Truth Table, Equations &amp; Verilog Code](https://www.watelectronics.com/what-is-full-adder-circuit-using-basic-gates/).
