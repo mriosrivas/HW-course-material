@@ -4,8 +4,6 @@ In this laboratory you will get familiar with the following:
 
 * Sequential Logic using `always_ff` statement
 
-* 
-
 * System Verilog
 
 * Nexys 4 DDR/ Nexys A7 development board and the 7 digit display
