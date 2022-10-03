@@ -2,7 +2,9 @@
 
 In this laboratory you will get familiar with the following:
 
-* Combinational Logic using `always_comb` statement
+* Sequential Logic using `always_ff` statement
+
+* 
 
 * System Verilog
 
@@ -49,8 +51,6 @@ Just remember this:
 
 > When developing combinational logic use blocking assingment `=`, and when developing sequential logic, use non-blocking assignment `<=`.
 
-
-
 Latches are usually bad for synchronous designs, and therefore we will omit them. Do not use this coding style:
 
 ```verilog
@@ -74,11 +74,7 @@ and compare their simulation.
 
 For your hardware designs you are provided with a file called `/scr/sources/sequential_logic.sv` where you will need to complete the modules to generate the specified hardware, your simulations are provided in a file called `/scr/sim/sequential_logic_tb.sv`.
 
-
-
 Your main top module is called `sequential_logic` and it's testbench is `sequential_logic_tb`.
-
-
 
 After you successfully completed your simulation, proceed to synthesize your design. Analyze your design and try to spot something strange on it's hardware.
 
@@ -100,7 +96,7 @@ always @(posedge clk, posedge reset)
             begin
                 count <= count + 1'b1;
             end
-    
+
     end
 ```
 
@@ -127,7 +123,7 @@ The following code shows how you can create a shift register
             begin
                 counter <= {counter[6:0], counter[7]};
             end
-            
+
      end
 ```
 
@@ -137,7 +133,7 @@ A clock divider is a circuit that allow us to create a slower clock by giving as
 
 ```verilog
    localparam constantNumber = N;
-   
+
      always @(posedge clk, posedge reset)
         begin
             if (reset == 1'b1)
@@ -152,9 +148,9 @@ A clock divider is a circuit that allow us to create a slower clock by giving as
                 begin
                     counter <= counter + 1'b1;
                 end
-        
+
         end
-        
+
     always @ (posedge clk, posedge reset)
         begin
             if (reset == 1'b1)
