@@ -4,3 +4,6 @@
 /Laboratory/Nexys4/Lab_04/scr/sources/solution_sequential_logic.sv
 /Laboratory/Nexys4/Lab_04/scr/sources/solution_counter.sv
 /Laboratory/Nexys4/Lab_04/scr/sources/solution_display.sv
+/Laboratory/Nexys4/Lab_05/scr/sources/solution_moore.sv
+/Laboratory/Nexys4/Lab_05/scr/sources/solution_mealy.sv
+
