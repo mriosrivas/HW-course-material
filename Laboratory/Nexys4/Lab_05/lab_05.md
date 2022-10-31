@@ -64,7 +64,7 @@ module moore_fsm(
     );
 
     typedef enum logic {S0, S1} statetype;
-    statetype state, nexttate;
+    statetype state, nexstate;
 
 
     // state register
